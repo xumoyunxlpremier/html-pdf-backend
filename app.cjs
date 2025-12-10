@@ -29,7 +29,7 @@ app.post("/generate-pdf", async (req, res) => {
 
     // ⬇️⬇️⬇️ MUHIM QISM ⬇️⬇️⬇️
     res.setHeader("Content-Type", "application/pdf");
-    res.setHeader("Content-Disposition", "attachment; filename=rezume.pdf");
+    res.setHeader("Content-Disposition", "attachment; filename=CV.pdf");
     res.send(Buffer.from(pdf));
     // ⬆️⬆️⬆️ BU TO'G'RI FORMAT ⬆️⬆️⬆️
   } catch (error) {
